@@ -1,0 +1,163 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  min-height: 100vh;
+}
+
+.gradientBtn {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  color: #fff;
+}
+
+.btn {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+input[type="text"] {
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  border-radius: 5px;
+  height: 20px;
+  width: 20px;
+  margin: 0 14px 0 5px;
+  background: #ffffff;
+  transition: all ease 0.4s;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #021212;
+  border: solid #ffffff 1px;
+  position: relative;
+}
+
+input[type="checkbox"]:focus {
+  outline: none;
+  box-shadow: 0 0 3pt 3pt #23a5d548;
+}
+
+input[type="checkbox"]:checked:before {
+  font-family: 'FontAwesome';
+  content: '\f00c';
+  display: block;
+  color: #e73c7e;
+  font-size: 16px;
+  position: absolute;
+  top: -3px;
+  right: 1px;
+}
+
+/* Textes */
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  color: #fff;
+}
+
+p {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+}
+
+.appStyle {
+  background-color: #021212;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.tasksCount {
+  color: #fff;
+}
+
+.list-group {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+}
+
+.list-group-item {
+  background-color: transparent;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0 5px 0;
+  border-bottom: solid #fff 1px;
+}
+
+.nameTask {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  font-size: 1.1rem;
+  position: relative;
+  top: 3px;
+}
+
+.deleteTask {
+  display: block;
+  background-color: transparent;
+  border: none;
+  border-radius: 2px;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  transition: all ease 0.4s;
+}
+
+.deleteTask:before {
+  font-family: 'FontAwesome';
+  content: '\f05e';
+  font-size: 25px;
+  color: #e73c7e;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.deleteTask:hover {
+  transform: scale(1.3);
+}
